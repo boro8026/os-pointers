@@ -163,7 +163,7 @@ double promptDouble(std::string message, double min, double max)
 */
 void calculateStudentAverage(void *object, double *avg)
 {
-    double *arr = (double(*))object; //get a couple of the inputted array (grades)
+    double *arr = (double*)object; //store the grades of the student from void *object
     double sizeOfArr = *avg; //get the value of number of assignments
     double sum = 0;
     for(int index = 0; index < sizeOfArr; index++) //calculate sum of all the grades
